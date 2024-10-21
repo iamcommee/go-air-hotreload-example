@@ -1,0 +1,9 @@
+services:
+  app-hotreload:
+    image: cosmtrek/air:latest
+    restart: "no"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/go/src/
+    working_dir: /go/src/
